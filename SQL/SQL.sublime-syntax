@@ -101,7 +101,7 @@ contexts:
       scope: constant.language.boolean.true.sql
     - match: (?i:\b(null)\b)
       scope: constant.language.null.sql
-    - match: (?i:\b(select(\s+(distinct|top))?|insert(\s+(ignore\s+)?into)?|update|delete|truncate|from|set|where|group\s+by|with|case|when|then|else|end|union(\s+all)?|using|order\s+by|limit|(inner|cross)\s+join|join|straight_join|(left|right)(\s+outer)?\s+join|natural(\s+(left|right)(\s+outer)?)?\s+join)\b)
+    - match: (?i:\b(select(\s+(distinct|top))?|insert(\s+(ignore\s+)?into)?|update|delete|truncate|from|set|where|group\s+by|with|case|when|then|else|end|returning|union(\s+all)?|using|order\s+by|limit|(inner|cross)\s+join|join|straight_join|(left|right)(\s+outer)?\s+join|natural(\s+(left|right)(\s+outer)?)?\s+join)\b)
       scope: keyword.other.DML.sql
     - include: logical-operators
     - match: (?i:\blike\b)
